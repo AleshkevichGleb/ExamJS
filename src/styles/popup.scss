@@ -1,0 +1,63 @@
+.app {
+    max-width: 1310px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    margin: 20px 5px;
+    box-shadow: 3px 5px 10px rgb(148, 147, 147);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        position: relative;
+
+        .popup__close {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            font-size: 30px;
+            min-width: 40px;
+            min-height: 40px;
+            padding-bottom: 5px;
+            background-color: rgba(184, 177, 177, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+}
